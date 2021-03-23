@@ -6,8 +6,21 @@
 	<meta charset="UTF-8">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat&family=Noto+Sans+JP:wght@900&family=Open+Sans&family=Oswald:wght@200;700&family=Raleway:wght@700&family=Recursive&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css"></link>
 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@700&display=swap" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+	  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	  crossorigin="anonymous"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+	<link rel="stylesheet" href="assets/style.css"></link>
 
 
 
@@ -19,31 +32,30 @@
 		
 
 		<!--<div class="future"></div>-->
-		<div class="logo"><img src="images/carnales.gif"></div>
+		<div class="logo"><img src="/images/carnales.png"></div>
 		<div class="social__networks">
 			
 
-			<div class="social__bottom"><div><img src="images/icons/facebook.png"></div><!--<div><p>Facebook</p></div>--></div>
-			<div class="social__bottom"><div><img src="images/icons/instagram.png"></div><!--<div><p>Instagram</p></div>--></div>
+			<div class="social__bottom"><div><img src="/images/icons/facebook-none.png"></div><!--<div><p>Facebook</p></div>--></div>
+			<div class="social__bottom"><div><img src="/images/icons/instagram-none.png"></div><!--<div><p>Instagram</p></div>--></div>
 
 		</div>
 
 	</div>
 
-
-	<div class="products">
+	<div class="carrusel">
 		
-		<div class="carts cart1"><div class="cart__title">PRODUCTO 1</div><div class="cart__image"><img src="images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">Banco de metal, alta durabilidad, madera de alta calidad</div><div class="cart__price">$10</div></div></div>
-		<div class="carts cart2"><div class="cart__title">PRODUCTO 2</div><div class="cart__image"><img src="images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">Banco de metal, alta durabilidad, madera de alta calidad</div><div class="cart__price">$10</div></div></div>
-		<div class="carts cart3"><div class="cart__title">PRODUCTO 3</div><div class="cart__image"><img src="images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">Banco de metal, alta durabilidad, madera de alta calidad</div><div class="cart__price">$10</div></div></div>
-		<div class="carts cart4"><div class="cart__title">PRODUCTO 4</div><div class="cart__image"><img src="images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">Banco de metal, alta durabilidad, madera de alta calidad</div><div class="cart__price">$10</div></div></div>
-		<div class="carts cart5"><div class="cart__title">PRODUCTO 5</div><div class="cart__image"><img src="images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">Banco de metal, alta durabilidad, madera de alta calidad</div><div class="cart__price">$10</div></div></div>
-		<div class="carts cart6"><div class="cart__title">PRODUCTO 6</div><div class="cart__image"><img src="images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">Banco de metal, alta durabilidad, madera de alta calidad</div><div class="cart__price">$10</div></div></div>
-		<div class="carts cart7"><div class="cart__title">PRODUCTO 7</div><div class="cart__image"><img src="images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">Banco de metal, alta durabilidad, madera de alta calidad</div><div class="cart__price">$10</div></div></div>
-		<div class="carts cart8"><div class="cart__title">PRODUCTO 8</div><div class="cart__image"><img src="images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">Banco de metal, alta durabilidad, madera de alta calidad</div><div class="cart__price">$10</div></div></div>
+		<div class="splide">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide"><div class="contenedor__carro"><img src="/images/our_services/3.jpg"></div></li>
+					<li class="splide__slide"><div class="contenedor__carro"><img src="/images/our_services/3.jpg"></div></li>
+					<li class="splide__slide"><div class="contenedor__carro"><img src="/images/our_services/3.jpg"></div></li>
+				</ul>
+			</div>
+		</div>
 
 	</div>
-
 
 	<div class="about-us">
 		
@@ -60,7 +72,7 @@
 
 			<div class="info__boton">
 				
-				<button class="botones">CLICK AQUÍ PARA COTIZAR</button>
+				<button class="botones"><a href="sendMessage.php">CLICK AQUÍ PARA COTIZAR</a></button>
 
 			</div>
 
@@ -68,14 +80,32 @@
 		</div>
 
 
-		<div class="about-us__image"><img src="images/products/mesa.jpg"></div>
+		<div class="about-us__image"><img src="/images/products/mesa.jpg"></div>
 	</div>
+
+	<div class="section__title"><h1>Productos elaborados</h1></div>
+
+	<div class="products">
+
+		<div class="carts cart1"><div class="cart__title">PRODUCTO 1</div><div class="cart__image"><img src="/images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">BANCO DE METAL, ALTA DURABILIDAD, MADERA DE ALTA CALIDAD</div><div class="cart__price">$10</div></div></div>
+		<div class="carts cart2"><div class="cart__title">PRODUCTO 2</div><div class="cart__image"><img src="/images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">BANCO DE METAL, ALTA DURABILIDAD, MADERA DE ALTA CALIDAD</div><div class="cart__price">$10</div></div></div>
+		<div class="carts cart3"><div class="cart__title">PRODUCTO 3</div><div class="cart__image"><img src="/images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">BANCO DE METAL, ALTA DURABILIDAD, MADERA DE ALTA CALIDAD</div><div class="cart__price">$10</div></div></div>
+		<div class="carts cart4"><div class="cart__title">PRODUCTO 4</div><div class="cart__image"><img src="/images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">BANCO DE METAL, ALTA DURABILIDAD, MADERA DE ALTA CALIDAD</div><div class="cart__price">$10</div></div></div>
+		<div class="carts cart5"><div class="cart__title">PRODUCTO 5</div><div class="cart__image"><img src="/images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">BANCO DE METAL, ALTA DURABILIDAD, MADERA DE ALTA CALIDAD</div><div class="cart__price">$10</div></div></div>
+		<div class="carts cart6"><div class="cart__title">PRODUCTO 6</div><div class="cart__image"><img src="/images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">BANCO DE METAL, ALTA DURABILIDAD, MADERA DE ALTA CALIDAD</div><div class="cart__price">$10</div></div></div>
+		<div class="carts cart7"><div class="cart__title">PRODUCTO 7</div><div class="cart__image"><img src="/images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">BANCO DE METAL, ALTA DURABILIDAD, MADERA DE ALTA CALIDAD</div><div class="cart__price">$10</div></div></div>
+		<div class="carts cart8"><div class="cart__title">PRODUCTO 8</div><div class="cart__image"><img src="/images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">BANCO DE METAL, ALTA DURABILIDAD, MADERA DE ALTA CALIDAD</div><div class="cart__price">$10</div></div></div>
+
+	</div>
+
+	<div class="section__title"><h1>Nuestros servicios</h1></div>
+	
 
 	<div class="our__services">
 	
-		<div class="carts_serv cart1"><div class="cartserv__image"><img src="images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">Bancos</div></div></div>
-		<div class="carts_serv cart2"><div class="cartserv__image"><img src="images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">Escritorios</div></div></div>
-		<div class="carts_serv cart3"><div class="cartserv__image"><img src="images/products/mesa.jpg"></div><div class="cart__footer"><div class="cart__description">Mesas</div></div></div>
+		<div class="carts_serv cart1"><div class="cartserv__image"><img src="/images/our_services/1.jpg"></div><div class="cart__footer"><div class="cart__description">Bancos</div></div></div>
+		<div class="carts_serv cart2"><div class="cartserv__image"><img src="/images/our_services/2.jpg"></div><div class="cart__footer"><div class="cart__description">Escritorios</div></div></div>
+		<div class="carts_serv cart3"><div class="cartserv__image"><img src="/images/our_services/3.jpg"></div><div class="cart__footer"><div class="cart__description">Mesas</div></div></div>
 
 	</div>
 
@@ -83,7 +113,7 @@
 		
 		<div class="form">
 			
-			<form>
+			<form method="post" action="sendMessage.php">
 
 
 				<table>
@@ -94,10 +124,12 @@
 							<input type="text" class="cajon__texto" name="txtNombre" id="txtNombre" />
 
 							<br>
+							<br>
 
 							<label>Telefono</label><br>
 							<input type="text" class="cajon__texto" name="txtTelefono" id="txtTelefono" />
 
+							<br>
 							<br>
 
 							<label>¿Qué deseas realizar?</label><br>
@@ -125,7 +157,7 @@
 		</div>
 		<div class="brand">
 				
-				<img src="images/carnales.gif">
+				<img src="/images/carnales.png">
 
 
 		</div>
@@ -136,10 +168,16 @@
 
 	<footer>
 		
-		<h2>Derechos reservados Carnales SA DE CV</h2>
+		<!--<h2>Derechos reservados Carnales SA DE CV</h2>-->
 
 	</footer>
 
+
+	<script>
+		document.addEventListener( 'DOMContentLoaded', function () {
+			new Splide( '.splide' ).mount();
+		} );
+	</script>
 
 </body>
 </html>
