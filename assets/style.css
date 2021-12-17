@@ -1,6 +1,8 @@
 :root{
 
-	--texto: 'Oswald', sans-serif;
+	--texto: 'Lato', sans-serif;
+	--titles: 'Fira Sans', sans-serif;
+	--firma: 'Smooch', cursive;
 
 }
 
@@ -24,18 +26,42 @@ body{
 .heading{
 	width: 100%;
 	height: auto;
-	background:rgba(244, 244, 244,255);
+	background:rgba(244, 244, 244,1);
 	z-index: 99999;
-	position: fixed;
+	position: sticky;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	top: 0;
 	justify-content: space-between;
-	font-family: 'Lato', sans-serif;
+	font-family: var(--texto);
 
-	-webkit-box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
+	/*-webkit-box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);*/
+}
+
+.menu{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 60%;
+}
+
+.menu div{
+	margin: 10px;
+}
+
+.menu a{
+	color: black;
+	cursor: pointer;
+	font-size: 14px;
+
+}
+
+.menu a:hover{
+	color: gray;
 }
 
 .logo{
@@ -55,8 +81,7 @@ body{
 }
 
 .social__networks{
-	
-	width: 40%;
+	width: 30%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
@@ -90,12 +115,53 @@ body{
 	margin: 1px;
 }
 
-.carrusel{
-	width: 100%;
-	height: 400px;
-	margin: 0 auto;
-	padding-top: 90px;
+.carrusel__section{
 	
+	color: black;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	
+
+}
+
+.carrusel__text{
+	color: black;
+	text-align: center;
+	padding: 20px;
+	font-family: var(--titles);
+	font-size: 40px;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+.title{
+	font-family: var(--titles);
+	font-size: 40px;
+	
+}
+
+.title-secundary{
+	font-family: var(--titles);
+	font-size: 30px;
+	color: gray;
+	margin-left: 10%;
+}
+
+
+.carrusel{
+	margin-left: auto;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows: 1fr;		
+}
+
+.carrusel img{
+	width: 250px;
+	height: 250px;
 }
 
 .carrusel .contenedor__carro{
@@ -211,13 +277,10 @@ body{
 
 	width: 100%;
 	height: 30%;
-	
 	color: black;
-	font-weight: normal;
 	display: flex;
 	flex-direction: column;
 	font-family: var(--texto);
-	font-size: 15px;
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
@@ -226,7 +289,7 @@ body{
 
 .about-us{
 
-	font-family: 'Oswald', sans-serif;
+	font-family: var(--texto);
 	font-weight: normal;
 	font-size: 20px;
 	text-align: justify;
@@ -249,11 +312,9 @@ body{
 }
 
 .about-us__image > img{
-
 	width: 400px;
 	height: 400px;
 	background: black;
-
 }
 
 .info__boton{
@@ -261,11 +322,11 @@ body{
 }
 
 .botones{
-	width: 100px;
-	height: 50px;
+	width: 140px;
+	height: 65px;
 	background:rgba(0,0,0,0.5);
 	color: white;
-	font-family: 'Oswald', sans-serif;
+	font-family: var(--texto);
 	margin-top: 10px;
 	cursor: pointer;
 	border: none;
@@ -338,8 +399,9 @@ body{
 
 .brand img{
 
-	width: 300px;
-	height: 300px;
+	width: 150px;
+	height: 120px;
+	object-fit: contain;
 
 }
 
@@ -365,12 +427,14 @@ body{
 
 footer{
 	width: 100%;
+	height: 40px;
 	text-align: center;
-	font-family: var(--texto);
+	font-family: var(--firma);
 	font-size: 16px;
 	font-weight: normal;
-	background:rgba(244, 244, 244,255);
-	color:white;
+	line-height: 40px;
+	color: black;
+	bottom: 0;
 }
 
 
@@ -475,5 +539,55 @@ footer{
 		justify-content: flex-start;
 	}
 
+	.carrusel{
+		grid-template-rows: 1fr 1fr 1fr;
+   		grid-template-columns: 1fr;
+	}
 
 }
+
+
+/********ADMIN********/
+
+h2{
+	font-family: var(--titles);
+}
+
+.box{
+	background-color:#e2e2e2; 
+	z-index: 2; 
+	border-radius: 5px;
+	color: black;
+	border: 1px solid gray;
+	
+}
+
+.box label{
+	font-size
+
+}
+
+input[type=text]{
+	font-size: 11px;
+	font-family: var(--texto);
+}
+
+select{
+	font-size: 12px;
+	font-family: var(--texto);
+}
+.brand{
+	font-family: var(--firma);
+	font-size: 25px;
+
+	
+}
+
+.container-fluid{
+	background: rgba(244, 244, 244,1);
+}
+
+#table-productos{
+	width: 100vw;
+}
+
